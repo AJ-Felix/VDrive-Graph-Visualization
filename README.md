@@ -8,7 +8,7 @@ Graph visualization prototype implementation with focus on visualization-driven 
 
 ## Install
 Install Hadoop 2.7.7 and Apache Flink 1.10.0 on the machine that runs the flink cluster. 
-Clone the repository to a local file system on the machine that runs the visualization.
+Clone the repository to a local file system on the machine that performs graph visualization.
 
 ## Usage
 Make sure HDFS and the flink cluster are running and graph data is stored in HDFS.
