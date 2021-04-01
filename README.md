@@ -28,12 +28,19 @@ Insert parameters as requested by the GUI.
 - Data Dir: Path to graph files in HDFS directory.
 - Graph ID: Gradoop Graph ID (only necessary for 'Gradoop' backend)
 
-Start the visualization by selecting a backend architecture.
+Start the visualization by selecting a backend architecture ('Gradoop', 'TableStream', 'AdjacencyMatrix')
 Visual operations (zoom, pan) can be triggered with a hand-held pointing device (e.g. computer mouse).
 
-#### Backend architectures
+## Formatting
+The application is able to read graph data in Gradoop CSV format (https://github.com/dbs-leipzig/gradoop/wiki)
+as well as VDrive format.
+All implemented backend architecture can only read data provided in the respective format.
+Graph data in Gradoop CSV format can be transformed to VDrive format by running the DataSetTransformer.java
+of the same maven project. Input arguments are explained as in-code comments.
+
+## Backend architectures
 Graph data has to be stored in Hadoop distributed File System (HDFS).
-If you want to visualize graphs in Gradoop CSV format (https://github.com/dbs-leipzig/gradoop/wiki),
+If you want to visualize graphs in Gradoop CSV format,
 choose 'Gradoop' to start the visualization.
 If you want to visualiza graphs in VDrive format,
 choose 'TableStream' or 'AdjacencyMatrix'.
